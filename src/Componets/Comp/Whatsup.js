@@ -4,7 +4,7 @@ import "../Css/Whatsup.css";
 export default function Whatsup() {
   return (
     <a
-      href="https://wa.me/919876543210" // replace with your number
+      href="https://wa.me/919946498761" // replace with your number
       className="whatsapp-float"
       target="_blank"
       rel="noopener noreferrer"
