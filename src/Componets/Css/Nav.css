@@ -1,0 +1,118 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin Sketch", sans-serif;
+}
+
+
+/* ---- Desktop top nav ---- */
+
+.top-nav {
+  background: #1e3b8a00; /* dark blue */
+  color: rgb(254, 254, 254);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  z-index:1000;
+}
+
+.top-nav .logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.top-nav .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.top-nav .nav-links li {
+  cursor: pointer;
+  transition: color 0.3s;
+  list-style: none;
+  
+}
+.top-nav .nav-links li a{
+    
+    text-decoration: none;
+    color: rgb(250, 247, 247);
+    font-family: Sansita;
+}
+
+.top-nav .nav-links li a:hover,
+.top-nav .nav-links li a.active {
+  color: #ffcc00; /* Highlight on hover/active */
+}
+
+/* ---- Mobile bottom nav ---- */
+.bottom-nav {
+  display: none;
+}
+  .logo-mobile{
+    display: none;
+  }
+
+/* Add spacing so content doesn't overlap brand bar */
+
+
+/* Responsive: show bottom nav only on mobile */
+@media (max-width: 768px) {
+
+  .top-nav {
+    display: none; /* hide top nav on mobile */
+  }
+
+  .bottom-nav {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(248, 248, 249, 0);
+    backdrop-filter: blur(10px);
+    border-radius: 1px;
+    color: white;
+    border-top: 2px solid #ddd;
+  }
+
+  .bottom-nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    list-style: none;
+  }
+
+  .bottom-nav ul li a{
+    text-align: center;
+    font-size: 22px;
+    cursor: pointer;    
+  }
+    .bottom-nav ul li a {
+    text-decoration: none;
+    color:rgb(255, 254, 254);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+}
+
+
+.bottom-nav ul li a.active {
+  color: #ffcc00; /* Icon color changes */
+}
+.logo-mobile{
+  display: block;
+  position: fixed;
+  color: #fcfdfd;
+  padding:5px;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+}
+
+
