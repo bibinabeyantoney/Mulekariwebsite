@@ -1,113 +1,117 @@
 .about-section {
-  padding: 60px 20px;
-  margin: auto;
-  font-family: "Segoe UI", sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-image: url('../Images/home1.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  justify-content:center; 
-  max-width: 100%;
+  display: list-item;
+  justify-content: center;
+  padding: 50px 70px;
+  background-image: url("../Images/home1.png");
 }
 
-/* General Headings */
-.about-section h2 {
-  font-size: 28px;
-  margin-bottom: 15px;
-  text-align: center;
-  color: #fafbfc;
-}
-
-.about-section h4, 
-.about-section h6 {
-  font-weight: 400;
-  color: #f9f7f7;
+.about-container {
+  background-color: #55555573; /* gray background */
+  border-radius: 25px;
+  padding: 30px;
   margin-bottom: 20px;
-  text-align: center;
-}
-
-/* About Intro */
-.about {
-  margin-bottom: 50px;
-  background-color: #28272793;
-  border-radius: 10px;
-  padding-bottom: 5px;
-  background-image: url('../Images/home.png');
-}
-
-/* Mission */
-.mission {
-  margin-bottom: 50px;
-  background-color: #28272793;
-  border-radius: 10px;
-  padding-bottom: 5px;
-  background-image: url('../Images/home.png');
-}
-
-/* Why Choose Us */
-.why-choose-us {
-  margin-bottom: 50px;
-  background-color: #28272793;
-  border-radius: 10px;
-  padding-bottom: 5px;
-  background-image: url('../Images/home.png');
-}
-
-.why-choose-us ul {
-  list-style: none;
-  padding: 0;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.why-choose-us li {
-  font-size: 18px;
-  padding: 10px 0;
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: #fbfafa;
+  gap: 40px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* Left side */
+.about-content {
+  flex: 1;
+}
+
+.about-heading {
+  background-color: rgba(255, 0, 0, 0.161);
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  background-color: rgba(4, 4, 4, 0.325);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Right side image */
+.about-image {
+  flex-shrink: 0;
+  background-color: black;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 250px;
+  height: 350px;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.about-image2{
+  display: none;
+}
+.about-image1 {
+  flex-shrink: 0;
+  background-color: black;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 250px;
+  height: 350px;
+}
+
+.about-image1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.about-image2 {
+  flex-shrink: 0;
+  background-color: black;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 250px;
+  height: 350px;
+}
+
+.about-image2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 
-
-/* Mobile Responsive */
+/* Responsive */
 @media (max-width: 768px) {
-  .about-section {
-    padding: 40px 15px;
+  .about-section{
+    padding: 15px;
+    padding-top: 30px;
   }
-
-  .about-section h2 {
-    font-size: 24px;
+  .about-container {
+    flex-direction: column;
+    text-align: center;
   }
-
-  .why-choose-us li {
-    font-size: 16px;
+  .about-image{
+    width: 300px;
+    height: 200px;
   }
-
-  .successcard {
-    width: 100%;
-    max-width: 350px;
+  .about-image2 {
+    display: block;
+    width: 300px;
+    height: 200px;
   }
-}
-
-@media (max-width: 480px) {
-  .about-section h2 {
-    font-size: 20px;
-  }
-
-  .about-section h4,
-  .about-section h6 {
-    font-size: 14px;
-  }
-
-  .successcard img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .successcard h4 {
-    font-size: 16px;
+  .about-image1{
+    display: none;
   }
 }

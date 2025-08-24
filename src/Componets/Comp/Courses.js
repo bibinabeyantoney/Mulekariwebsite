@@ -8,7 +8,6 @@ function Courses() {
     <div className='cour-section'>
     <div className='our-Success'>
       <div className='successcard'>
-          <img></img>
           <h4></h4>
       </div>
       <div className='successcard'>

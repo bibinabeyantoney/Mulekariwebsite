@@ -15,7 +15,7 @@ function Nav() {
                     <li><NavLink to='/contact'>Contact</NavLink></li>
                 </ul>    
     </nav>
-    <div className='logo-mobile'>Mulekari</div>
+    <div className='logo-mobile'><h4>Mulekari</h4></div>
     <div className="bottom-nav">
       <ul>
         <li><NavLink to='/' end><FaHome /></NavLink></li>
