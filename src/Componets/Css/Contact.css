@@ -1,0 +1,6 @@
+.background{
+    background-image: url("../Images/home1.png");
+    max-width: 1000vh;
+    height: 1230px;
+    background-repeat: no-repeat;
+}
