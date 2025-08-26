@@ -1,7 +1,7 @@
 .about-section {
   display: list-item;
   justify-content: center;
-  padding: 50px 70px;
+  padding: 50px 140px;
   background-image: url("../Images/home1.png");
 }
 
@@ -96,7 +96,7 @@
 @media (max-width: 768px) {
   .about-section{
     padding: 15px;
-    padding-top: 30px;
+    padding-top: 50px;
   }
   .about-container {
     flex-direction: column;

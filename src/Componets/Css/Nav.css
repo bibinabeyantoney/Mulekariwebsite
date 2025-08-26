@@ -77,8 +77,7 @@
     left: 0;
     width: 100%;
     background: rgba(248, 248, 249, 0);
-    backdrop-filter: blur(10px);
-    border-radius: 1px;
+    backdrop-filter: blur(25px);
     color: white;
     border-top: 2px solid #ddd;
   }
