@@ -1,7 +1,7 @@
 .about-section {
   display: list-item;
   justify-content: center;
-  padding: 50px 140px;
+  padding: 90px 140px;
   background-image: url("../Images/home1.png");
 }
 
@@ -23,8 +23,8 @@
 }
 
 .about-heading {
-  background-color: rgba(255, 0, 0, 0.161);
-  color: white;
+  background-color: #ffcc00;
+  color: rgb(4, 4, 4);
   display: inline-block;
   padding: 10px 20px;
   border-radius: 25px;
