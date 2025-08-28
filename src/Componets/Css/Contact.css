@@ -1,6 +1,28 @@
 .background{
     background-image: url("../Images/home1.png");
     max-width: 1000vh;
-    height: 1230px;
+    min-height: 100vh;
     background-repeat: no-repeat;
+    display: flex;
+}
+.location-section{
+    color: aliceblue;
+    padding: 60px;
+    width: 500px;  
+}
+.map-container iframe{
+    width: 500px;
+    height: 400px;
+    border-radius: 8px;
+}
+
+@media(max-width:764px){
+
+.background{
+    max-height: 100vh;
+}
+.map-container iframe{
+    width: 300px;
+    height: 400px;
+}
 }

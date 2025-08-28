@@ -12,11 +12,24 @@
   z-index: 1000; /* stays above other elements */
   text-decoration: none;
   overflow: hidden;
+  animation: fadeInUp 1.2s ease-in-out;
 }
 
 .whatsapp-icon {
   width: 55px;
   height: 55px;
+  
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 @media (max-width: 768px) {
 .whatsapp-float {
