@@ -7,7 +7,7 @@ function Nav() {
   return (
     <>
     <nav className='top-nav'>
-            <div className='logo'>Moolekari Edupoint</div>
+            <div className='logo'>Moolekary Edupoint</div>
                 <ul className='nav-links'>
                     <li><NavLink to='/' end>Home</NavLink></li>
                     <li><NavLink to='/about'>About</NavLink></li>
@@ -15,7 +15,7 @@ function Nav() {
                     <li><NavLink to='/contact'>Contact</NavLink></li>
                 </ul>    
     </nav>
-    <div className='logo-mobile'><h4>Moolekari Edupoint</h4></div>
+    <div className='logo-mobile'><h4>Moolekary Edupoint</h4></div>
     <div className="bottom-nav">
       <ul>
         <li><NavLink to='/' end><FaHome /></NavLink></li>

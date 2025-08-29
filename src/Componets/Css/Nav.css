@@ -10,13 +10,12 @@
 /* ---- Desktop top nav ---- */
 
 .top-nav {
-  background: #1e3b8a00; /* dark blue */
+  background: #020202ae; /* dark blue */
   color: rgb(254, 254, 254);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 24px;
-
   position: fixed;
   top:0;
   left:0;
